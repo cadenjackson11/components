@@ -21,6 +21,7 @@ import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplicat
 import { JtaDropdownComponent } from './jta-dropdown/jta-dropdown.component';
 import { SnamAdditionComponent } from './snam-addition/snam-addition.component';
 import { PbrummelAdditionComponent } from './pbrummel-addition/pbrummel-addition.component';
+import { MtunaAdditionComponent } from './mtuna-addition/mtuna-addition.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { PbrummelAdditionComponent } from './pbrummel-addition/pbrummel-addition
     TjsMultiplicationComponent,
     JtaDropdownComponent,
     SnamAdditionComponent,
-    PbrummelAdditionComponent
+    PbrummelAdditionComponent,
+    MtunaAdditionComponent,
 
   ],
   imports: [
