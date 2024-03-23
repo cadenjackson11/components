@@ -6,6 +6,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatRadioModule } from '@angular/material/radio';
 
 import { MatCheckboxModule } from '@angular/material/checkbox';
 
@@ -22,6 +23,9 @@ import { JtaDropdownComponent } from './jta-dropdown/jta-dropdown.component';
 import { SnamAdditionComponent } from './snam-addition/snam-addition.component';
 import { PbrummelAdditionComponent } from './pbrummel-addition/pbrummel-addition.component';
 import { MtunaAdditionComponent } from './mtuna-addition/mtuna-addition.component';
+import { NumberGeneratorComponent } from './number-generator/number-generator.component';
+import { CebAdditionComponent } from './ceb-addition/cebladdition.component';
+import { CajNumberComponent } from './caj-number/caj-number.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,9 @@ import { MtunaAdditionComponent } from './mtuna-addition/mtuna-addition.componen
     SnamAdditionComponent,
     PbrummelAdditionComponent,
     MtunaAdditionComponent,
-
+    NumberGeneratorComponent,
+    CebAdditionComponent,
+    CajNumberComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,11 +52,10 @@ import { MtunaAdditionComponent } from './mtuna-addition/mtuna-addition.componen
     MatSelectModule,
     MatFormFieldModule,
     MatSlideToggleModule,
-    MatChipsModule
+    MatChipsModule,
+    MatRadioModule,
   ],
-  providers: [
-    provideAnimationsAsync()
-  ],
-  bootstrap: [AppComponent]
+  providers: [provideAnimationsAsync()],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

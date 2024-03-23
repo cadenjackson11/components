@@ -1,0 +1,59 @@
+<mat-card>
+    <mat-card-title>
+        Caden's Component
+    </mat-card-title>
+
+    <mat-card-content>
+        <mat-form-field>
+            <mat-label>Num 1</mat-label>
+        </mat-form-field>
+        <input 
+            matInput 
+            type="number"
+            [(ngModel)]="numberOne"
+        >
+    <br>
+        <button 
+            mat-raised-button 
+            color="secondary"
+            (click)="divide()"
+            >
+            Divide
+        </button>
+    <br>    
+    <mat-form-field>
+        <mat-label>Num 2</mat-label>
+    </mat-form-field>
+    <input 
+        matInput 
+        type="number"
+        [(ngModel)]="numberTwo"
+    
+    >
+    <br><br>
+    numerator = {{ numberOne }}
+    <br><br>
+    denominator = {{ numberTwo }}
+    <br><br>
+    {{ total }}
+    
+    <br><br><br>
+
+    <mat-form-field>
+        <mat-label>color</mat-label>
+        <input 
+        matInput 
+        type="text"
+        [(ngModel)]="color"
+        >
+        <br>
+        <button mat-raised-button
+            (click)="favColor()"
+        >Favorite Color</button>
+    </mat-form-field>
+   <p>My favorite color is...</p>
+   <br>
+   {{ color }}
+   
+    </mat-card-content>
+</mat-card>
